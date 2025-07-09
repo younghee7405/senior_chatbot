@@ -23,5 +23,6 @@ COPY . .
 ENV PORT=5000
 
 # WSGI 서버로 실행
-CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "wsgi:app"]
+CMD gunicorn --bind 0.0.0.0:$PORT app:app
+
 
