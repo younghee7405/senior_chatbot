@@ -1,15 +1,15 @@
 # Flask 관련
 flask==2.3.3
 flask-cors==4.0.0
-flask-sqlalchemy==3.0.5
+flask-sqlalchemy==3.1.1  # ✅ 3.0.5 → 3.1.1 (langchain 최신 버전과 호환 보장)
 gunicorn
 python-dotenv==1.0.0
 requests==2.31.0
 
-# LangChain + Gemini(Google Generative AI) 호환 버전
-langchain==0.1.20
-langchain-community==0.0.20
-langchain-google-genai==0.0.9
+# LangChain + Gemini (버전 충돌 해결 버전)
+langchain==0.1.14               # ✅ 안정적인 Gemini 호환 버전
+langchain-community==0.0.19     # ✅ langchain==0.1.14과 잘 작동하는 버전
+langchain-google-genai==0.0.8   # ✅ 버전 충돌 없음
 
-# 벡터 검색
-faiss-cpu==1.7.4
+# faiss-cpu (임시로 제거)
+# faiss-cpu==1.7.4
