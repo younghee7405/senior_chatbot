@@ -418,6 +418,40 @@ body {
     color: #764ba2;
 }
 
+/* 오른쪽 하단 고정 홈 버튼 */
+.home-fab {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 1000;
+    transition: background 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+.home-fab:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.08);
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .home-fab {
+        right: 16px;
+        bottom: 16px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .main-content {
