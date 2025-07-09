@@ -19,4 +19,4 @@ google-auth==2.29.0
 google-auth-oauthlib==1.2.0
 
 # faiss는 빌드 완료 후 필요 시 주석 해제
-# faiss-cpu==1.7.4
+faiss-cpu==1.7.4
