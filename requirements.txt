@@ -1,15 +1,22 @@
-# Flask 관련
+# Flask 기반
 flask==2.3.3
 flask-cors==4.0.0
-flask-sqlalchemy==3.1.1  # ✅ 3.0.5 → 3.1.1 (langchain 최신 버전과 호환 보장)
+flask-sqlalchemy==3.1.1
 gunicorn
 python-dotenv==1.0.0
 requests==2.31.0
 
-# LangChain + Gemini (버전 충돌 해결 버전)
-langchain==0.1.14               # ✅ 안정적인 Gemini 호환 버전
-langchain-community==0.0.19     # ✅ langchain==0.1.14과 잘 작동하는 버전
-langchain-google-genai==0.0.8   # ✅ 버전 충돌 없음
+# LangChain + Gemini
+langchain==0.1.14
+langchain-community==0.0.19
+langchain-google-genai==0.0.8
 
-# faiss-cpu (임시로 제거)
+# Google + gRPC 필수
+grpcio==1.64.0
+protobuf==4.25.3
+google-api-core==2.17.1
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+
+# faiss는 빌드 완료 후 필요 시 주석 해제
 # faiss-cpu==1.7.4
