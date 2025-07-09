@@ -1,17 +1,15 @@
+# Flask 관련
 flask==2.3.3
 flask-cors==4.0.0
 flask-sqlalchemy==3.0.5
-openai==0.28.1
-langchain==0.0.345
-faiss-cpu==1.7.4
+gunicorn
 python-dotenv==1.0.0
 requests==2.31.0
-faiss-cpu
-langchain
-langchain-community
-langchain-google-genai
-flask
-flask-cors
-flask-sqlalchemy
-python-dotenv
-gunicorn
+
+# LangChain + Gemini(Google Generative AI) 호환 버전
+langchain==0.1.20
+langchain-community==0.0.20
+langchain-google-genai==0.0.9
+
+# 벡터 검색
+faiss-cpu==1.7.4
